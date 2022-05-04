@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: gray;
+        width: fit-content;
+        padding: 7px;
+        border-radius: 3px;
+        row-gap: 20px;
+
+        .textarea {
+            color: black;
+            padding: 5px;
+        }
+
+        .info {
+            align-self: center;
+            p {
+                text-align: center;
+            }
+        }
+    }
+    .keyboard {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+
+        .row {
+            display: flex;
+            column-gap: 3px;
+
+            .key {
+                min-width: 50px;
+                height: 50px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+            }
+
+            &:nth-child(1) {
+                .key:last-child {
+                    flex-grow: 2;
+                    text-align: end;
+                    vertical-align: bottom;
+                }
+            }
+
+            &:nth-child(2) {
+                .key:first-child {
+                    flex-grow: 2;
+                    text-align: start;
+                }
+            }
+
+            &:nth-child(3) {
+                .key:first-child {
+                    flex-grow: 2;
+                    text-align: start;
+                }
+
+                .key:last-child {
+                    flex-grow: 2;
+                    text-align: end;
+                }
+            }
+
+            &:nth-child(4) {
+                .key:first-child {
+                    flex-grow: 2;
+                    text-align: start;
+                }
+
+                .key:last-child {
+                    flex-grow: 2;
+                    text-align: end;
+                }
+            }
+
+            &:nth-child(5) {
+                .key:nth-child(5){
+                    flex-grow: 2;
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+}
