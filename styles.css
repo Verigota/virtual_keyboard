@@ -1,0 +1,147 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: gray;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px;
+  border-radius: 3px;
+  row-gap: 20px;
+}
+
+body .container .textarea {
+  color: black;
+  padding: 5px;
+}
+
+body .container .info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .container .info p {
+  text-align: center;
+}
+
+body .keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+body .keyboard .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3px;
+          column-gap: 3px;
+}
+
+body .keyboard .row .key {
+  min-width: 50px;
+  height: 50px;
+}
+
+body .keyboard .row .key:hover {
+  cursor: pointer;
+}
+
+body .keyboard .row:nth-child(1) .key:last-child {
+  min-width: 75px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: end;
+  vertical-align: bottom;
+}
+
+body .keyboard .row:nth-child(2) .key:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: start;
+}
+
+body .keyboard .row:nth-child(3) .key:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: start;
+}
+
+body .keyboard .row:nth-child(3) .key:last-child {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: end;
+}
+
+body .keyboard .row:nth-child(4) .key:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: start;
+}
+
+body .keyboard .row:nth-child(4) .key:last-child {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: end;
+}
+
+body .keyboard .row:nth-child(5) .key:nth-child(4) {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  min-width: 150px;
+}
+
+.pressed {
+  background-color: darkgray;
+  border-radius: 25px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.pressed-caps {
+  background-color: darkgray;
+  border-radius: 25px;
+}
+/*# sourceMappingURL=styles.css.map */
