@@ -1,92 +1,119 @@
-const keyboardItemes = [
+export const keyboardItemes = [
     {
         'eventCode' : 'Backquote',
         'eventKeyEn' : "`",
-        'eventKeyRu' : '',
+        'shiftOnEn' : '~',
+        'eventKeyRu' : 'ё',
+        'shiftOnRu' : 'Ë',
+        'upper': true,
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit1',
         'eventKeyEn' : '1',
+        'shiftOnEn' : '!',
         'eventKeyRu' : '1',
+        'shiftOnRu' : '!',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit2',
         'eventKeyEn' : '2',
+        'shiftOnEn' : '@',
         'eventKeyRu' : '2',
+        'shiftOnRu' : '"',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit3',
         'eventKeyEn' : '3',
+        'shiftOnEn' : '#',
         'eventKeyRu' : '3',
+        'shiftOnRu' : '№',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit4',
         'eventKeyEn' : '4',
+        'shiftOnEn' : '$',
         'eventKeyRu' : '4',
+        'shiftOnRu' : ';',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit5',
         'eventKeyEn' : '5',
+        'shiftOnEn' : '%',
         'eventKeyRu' : '5',
+        'shiftOnRu' : '%',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit6',
         'eventKeyEn' : '6',
+        'shiftOnEn' : '^',
         'eventKeyRu' : '6',
+        'shiftOnRu' : ':',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit7',
         'eventKeyEn' : '7',
+        'shiftOnEn' : '&',
         'eventKeyRu' : '7',
+        'shiftOnRu' : '?',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit8',
         'eventKeyEn' : '8',
+        'shiftOnEn' : '*',
         'eventKeyRu' : '8',
+        'shiftOnRu' : '*',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit9',
         'eventKeyEn' : '9',
+        'shiftOnEn' : '(',
         'eventKeyRu' : '9',
+        'shiftOnRu' : '(',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Digit0',
         'eventKeyEn' : '0',
+        'shiftOnEn' : ')',
         'eventKeyRu' : '0',
+        'shiftOnRu' : ')',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Minus',
         'eventKeyEn' : '-',
+        'shiftOnEn' : '_',
         'eventKeyRu' : '-',
+        'shiftOnRu' : '_',
         'row' : 0,  
     },
 
     {
         'eventCode' : 'Equal',
         'eventKeyEn' : '=',
+        'shiftOnEn' : '+',
         'eventKeyRu' : '=',
+        'shiftOnRu' : '+',
         'row' : 0,  
     },
 
@@ -94,104 +121,114 @@ const keyboardItemes = [
         'eventCode' : 'Backspace',
         'eventKeyEn' : 'delete',
         'eventKeyRu' : 'delete',
-        'row' : 0,  
+        'row' : 0,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'Tab',
         'eventKeyEn' : 'tab',
         'eventKeyRu' : 'tab',
-        'row' : 1,  
+        'row' : 1,
+        'notEntered': true,     
     },
 
     {
         'eventCode' : 'KeyQ',
         'eventKeyEn' : 'q',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'й',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyW',
         'eventKeyEn' : 'w',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'ц',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyE',
         'eventKeyEn' : 'e',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'у',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyR',
         'eventKeyEn' : 'r',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'к',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyT',
         'eventKeyEn' : 't',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'е',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyY',
         'eventKeyEn' : 'y',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'н',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyU',
         'eventKeyEn' : 'u',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'г',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyI',
         'eventKeyEn' : 'i',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'ш',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyO',
         'eventKeyEn' : 'o',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'щ',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'KeyP',
         'eventKeyEn' : 'p',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'з',
         'row' : 1,  
     },
 
     {
         'eventCode' : 'BracketLeft',
         'eventKeyEn' : '[',
-        'eventKeyRu' : '',
+        'shiftOnEn' : '{',
+        'eventKeyRu' : 'х',
+        'shiftOnRu' : 'Х',
+        'upper': true,
         'row' : 1,  
     },
 
     {
         'eventCode' : 'BracketRight',
         'eventKeyEn' : ']',
-        'eventKeyRu' : '',
+        'shiftOnEn' : '}',
+        'eventKeyRu' : 'ъ',
+        'shiftOnRu' : 'Ъ',
+        'upper': true,
         'row' : 1,  
     },
 
     {
         'eventCode' : 'Backslash',
         'eventKeyEn' : '\\',
-        'eventKeyRu' : '',
+        'shiftOnEn' : '|',
+        'eventKeyRu' : '\\',
+        'shiftOnRu' : '/',
         'row' : 1,  
     },
 
@@ -199,224 +236,240 @@ const keyboardItemes = [
         'eventCode' : 'CapsLock',
         'eventKeyEn' : 'caps lock',
         'eventKeyRu' : 'caps lock',
-        'row' : 2,  
+        'row' : 2,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'KeyA',
         'eventKeyEn' : 'a',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'ф',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyS',
         'eventKeyEn' : 's',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'ы',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyD',
         'eventKeyEn' : 'd',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'в',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyF',
         'eventKeyEn' : 'f',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'а',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyG',
         'eventKeyEn' : 'g',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'п',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyH',
         'eventKeyEn' : 'h',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'р',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyJ',
         'eventKeyEn' : 'j',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'о',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyK',
         'eventKeyEn' : 'k',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'л',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'KeyL',
         'eventKeyEn' : 'l',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'д',
         'row' : 2,  
     },
 
     {
         'eventCode' : 'Semicolon',
         'eventKeyEn' : ';',
-        'eventKeyRu' : '',
+        'shiftOnEn' : ':',
+        'eventKeyRu' : 'ж',
+        'shiftOnRu' : 'Ж',
+        'upper': true,
         'row' : 2,  
     },
 
     {
         'eventCode' : 'Quote',
         'eventKeyEn' : '\'',
-        'eventKeyRu' : '',
+        'shiftOnEn' : '"',
+        'eventKeyRu' : 'э',
+        'shiftOnRu' : 'Э',
+        'upper': true,
         'row' : 2,  
     },
 
     {
         'eventCode' : 'Enter',
         'eventKeyEn' : 'return',
-        'eventKeyRu' : '',
-        'row' : 2,  
+        'eventKeyRu' : 'return',
+        'row' : 2,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'ShiftLeft',
         'eventKeyEn' : 'shift',
-        'eventKeyRu' : '',
-        'row' : 3,  
+        'eventKeyRu' : 'shift',
+        'row' : 3,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'KeyZ',
         'eventKeyEn' : 'z',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'я',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'KeyX',
         'eventKeyEn' : 'x',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'ч',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'KeyC',
         'eventKeyEn' : 'c',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'с',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'KeyV',
         'eventKeyEn' : 'v',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'м',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'KeyB',
         'eventKeyEn' : 'b',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'и',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'KeyN',
         'eventKeyEn' : 'n',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'т',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'KeyM',
         'eventKeyEn' : 'm',
-        'eventKeyRu' : '',
+        'eventKeyRu' : 'ь',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'Comma',
         'eventKeyEn' : ',',
-        'eventKeyRu' : '',
+        'shiftOnEn' : '<',
+        'eventKeyRu' : 'б',
+        'shiftOnRu' : 'Б',
+        'upper': true,
         'row' : 3,  
     },
 
     {
         'eventCode' : 'Period',
         'eventKeyEn' : '.',
-        'eventKeyRu' : '',
+        'shiftOnEn' : '>',
+        'eventKeyRu' : 'ю',
+        'shiftOnRu' : 'Ю',
+        'upper': true,
         'row' : 3,  
     },
 
     {
         'eventCode' : 'Slash',
         'eventKeyEn' : '/',
-        'eventKeyRu' : '',
+        'shiftOnEn' : '?',
+        'eventKeyRu' : '.',
+        'shiftOnRu' : ',',
         'row' : 3,  
     },
 
     {
         'eventCode' : 'ShiftRight',
         'eventKeyEn' : 'shift',
-        'eventKeyRu' : '',
-        'row' : 3,  
-    },
-
-    {
-        'eventCode' : '',
-        'eventKeyEn' : 'fn',
-        'eventKeyRu' : '',
-        'row' : 4,  
+        'eventKeyRu' : 'shift',
+        'row' : 3,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'ControlLeft',
         'eventKeyEn' : 'control',
         'eventKeyRu' : 'control',
-        'row' : 4,  
+        'row' : 4,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'AltLeft',
         'eventKeyEn' : 'option',
         'eventKeyRu' : 'option',
-        'row' : 4,  
+        'row' : 4,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'MetaLeft',
         'eventKeyEn' : 'command',
         'eventKeyRu' : 'command',
-        'row' : 4,  
+        'row' : 4,
+        'notEntered': true,
     },
 
     {
         'eventCode' : 'Space',
-        'eventKeyEn' : '',
-        'eventKeyRu' : '',
+        'eventKeyEn' : ' ',
+        'eventKeyRu' : ' ',
         'row' : 4,  
     },
 
     {
-        'eventCode' : 'MetaLeft',
+        'eventCode' : 'MetaRight',
         'eventKeyEn' : 'command',
         'eventKeyRu' : 'command',
-        'row' : 4,  
+        'row' : 4,
+        'notEntered': true,
     },
 
     {
-        'eventCode' : 'AltLeft',
+        'eventCode' : 'AltRight',
         'eventKeyEn' : 'option',
         'eventKeyRu' : 'option',
-        'row' : 4,  
+        'row' : 4,
+        'notEntered': true, 
     },
 
     {
@@ -444,24 +497,6 @@ const keyboardItemes = [
         'eventCode' : 'ArrowRight',
         'eventKeyEn' : 'ᐅ',
         'eventKeyRu' : 'ᐅ',
-        'row' : 4,  
+        'row' : 4,
     },
-
-
 ];
-
-function createKeyboard() {
-    const container = "<div class='container'><textarea class='textarea' rows='15'></textarea><div class='keyboard'><div class='row'></div><div class='row'></div><div class='row'></div><div class='row'></div><div class='row'></div></div><div class='info'><p>Клавиатура создана в операционной системе macOS</p><p>Для переключения языка комбинация: control + пробел</p></div></div>";
-    document.querySelector('.body').innerHTML = container;
-    const rows = document.querySelectorAll('.row');
-    rows.forEach((row, ind) => {
-        const rowKeys = keyboardItemes.filter(item => {
-            return item.row === ind;
-        });
-        rowKeys.forEach(elem => {
-            rows[ind].innerHTML += `<button class="key"><span>${elem.eventKeyEn}</span></button>`;
-        })
-    })
-}
-
-window.addEventListener('load', createKeyboard);

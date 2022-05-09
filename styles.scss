@@ -29,6 +29,8 @@ body {
         display: flex;
         flex-direction: column;
         row-gap: 3px;
+        width: fit-content;
+        align-self: center;
 
         .row {
             display: flex;
@@ -46,6 +48,7 @@ body {
 
             &:nth-child(1) {
                 .key:last-child {
+                    min-width: 75px;
                     flex-grow: 2;
                     text-align: end;
                     vertical-align: bottom;
@@ -84,11 +87,22 @@ body {
             }
 
             &:nth-child(5) {
-                .key:nth-child(5){
+                .key:nth-child(4){
                     flex-grow: 2;
                     min-width: 150px;
                 }
             }
         }
     }
+}
+
+.pressed {
+    background-color: darkgray;
+    border-radius: 25px;
+    transition: all 0.1s ease-in-out;
+}
+
+.pressed-caps {
+    background-color: darkgray;
+    border-radius: 25px;
 }
