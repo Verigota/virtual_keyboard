@@ -28,11 +28,12 @@ function createKeyboard() {
   rows.forEach((row, ind) => {
     const rowKeys = keyboardItemes.filter((item) => item.row === ind);
     rowKeys.forEach((elem) => {
+      const { eventCode, eventKeyEn, eventKeyRu } = elem;
       if (currLang === 'En') {
-        rows[ind].innerHTML += `<button class="key" data-key=${elem.eventCode}>${elem.eventKeyEn}</button>`;
+        rows[ind].innerHTML += `<button class="key" data-key=${eventCode}>${eventKeyEn}</button>`;
       }
       if (currLang === 'Ru') {
-        rows[ind].innerHTML += `<button class="key" data-key=${elem.eventCode}>${elem.eventKeyRu}</button>`;
+        rows[ind].innerHTML += `<button class="key" data-key=${eventCode}>${eventKeyRu}</button>`;
       }
     });
   });
@@ -47,11 +48,7 @@ function createKeyboard() {
     allKeys.forEach((key) => {
       const currentKey = key;
       const keyItem = keyboardItemes.find((el) => el.eventCode === key.dataset.key);
-      if (currLang === 'En') {
-        currentKey.textContent = keyItem.eventKeyEn;
-      } else {
-        currentKey.textContent = keyItem.eventKeyRu;
-      }
+      currentKey.textContent = currLang === 'En' ? keyItem.eventKeyEn : keyItem.eventKeyRu;
     });
   }
 
