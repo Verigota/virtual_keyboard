@@ -91,8 +91,18 @@ function createKeyboard() {
     
 
     function deleteSymbol() {
-        let text = textarea.textContent;
-        textarea.textContent = text.slice(0, text.length-1);
+        if (textarea.selectionStart) {
+            const startPos = textarea.selectionStart;
+            const endPos = textarea.selectionEnd;
+            textarea.value = textarea.value.substring(0, startPos-1)
+                + textarea.value.substring(endPos, textarea.value.length);
+            textarea.selectionStart = startPos - 1;
+            textarea.selectionEnd = startPos - 1;
+        } else {
+            let text = textarea.textContent;
+            textarea.textContent = text.slice(0, text.length-1);
+        }
+        textarea.focus();
     }
 
     const caps = document.querySelector('[data-key=CapsLock]');

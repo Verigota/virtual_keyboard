@@ -119,8 +119,8 @@ export const keyboardItemes = [
 
     {
         'eventCode' : 'Backspace',
-        'eventKeyEn' : 'delete',
-        'eventKeyRu' : 'delete',
+        'eventKeyEn' : 'backspace',
+        'eventKeyRu' : 'backspace',
         'row' : 0,
         'notEntered': true,
     },
