@@ -1,0 +1,25 @@
+{
+  "name": "virtual-keyboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Verigota/virtual_keyboard.git"
+  },
+  "author": "Tatsiana Viaryha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Verigota/virtual_keyboard/issues"
+  },
+  "homepage": "https://github.com/Verigota/virtual_keyboard#readme"
+}
